@@ -1,0 +1,112 @@
+<DOCTYPEhtml>
+    
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>I/O System Management</title>
+    </head>
+<body>
+    <h3>Operating system using I/O port</h3>
+    <p>
+        
+        An I/O port usually consists of four different registers. These are (1) status, (2) control, (3) data-in, and (4) data-out registers.
+    </p>
+    
+    <ul>
+        <li>
+        	The data-in register is read by the host for getting input. 
+        </li>
+        <li>
+        	The data-out register is written by the host for sending output.
+        </li>
+        <li>
+        	The status register holds bits which can be read by the host.
+        </li>
+        <li>
+        	The control register is written by the host for starting a command or for changing the mode of any device.
+        </li>
+        <li>
+            The data registers are usually 1 to 4 bytes in size. Some of the controllers have FIFO chips which hold several bytes of input or output data for expanding the capacity of the controller beyond the size of the data register.
+        </li>
+    </ul>
+    
+    <p>
+        One of the important jobs of an Operating System is to manage various I/O devices including mouse, keyboards, touch pad, disk drives, display adapters, USB devices, Bit-mapped screen, LED, Analog-to-digital converter, On/off switch, network connections, audio I/O, printers etc.<br>
+        An I/O system is required to take an application I/O request and send it to the physical device, then take whatever response comes back from the device and send it to the application. I/O devices can be divided into two categories −
+    </p>
+    
+    <table border="1px solid "  >
+        <tr>
+            <th>Block devices </th>
+            <th> A block device is one with which the driver communicates by sending entire blocks of data. For example, Hard disks, USB cameras, Disk-On-Key etc.</th>
+        </tr>
+        <tr>
+            <th>
+               	Character devices
+            </th>
+            <th>
+                A character device is one with which the driver communicates by sending and receiving single characters (bytes, octets). For example, serial ports, parallel ports, sounds cards etc
+            </th>
+        </tr>
+    
+    </table>
+    
+    <br>
+    <br>
+    
+    <p>
+            <b>I/O System Management –</b><br>
+                The module that keeps track of the status of devices is called the I/O traffic controller. Each I/O device has a device handler that resides in a separate process associated with that device.
+                The I/O subsystem consists of
+        </p>
+        
+        <ul>
+            <li>
+                A memory Management component that includes buffering caching and spooling.     
+            </li>
+            <li>
+                A general device driver interface.        
+            </li>
+        </ul>
+        
+        <p>Drivers for specific hardware devices.</p>
+        
+        <p>
+            <b>Assembler –</b><br>
+                The input to an assembler is an assembly language program. The output is an object program plus information that enables the loader to prepare the object program for execution. At one time, the computer programmer had at his disposal a basic machine that interpreted, through hardware, certain fundamental instructions. He would program this computer by writing a series of ones and Zeros (Machine language), place them into the memory of the machine.
+        </p>
+        
+        
+        <p>
+            <b>Compiler –</b><br>
+                The High-level languages- examples are FORTRAN, COBOL, ALGOL and PL/I are processed by compilers and interpreters. A compiler is a program that accepts a source program in a “high-level language “and produces a corresponding object program. An interpreter is a program that appears to execute a source program as if it was machine language. The same name (FORTRAN, COBOL, etc.) is often used to designate both a compiler and its associated language.
+         </p>
+        
+        
+        <P>
+            <b>Loader –</b><br>
+                A Loader is a routine that loads an object program and prepares it for execution. There are various loading schemes: absolute, relocating and direct-linking. In general, the loader must load, relocate and link the object program. The loader is a program that places programs into memory and prepares them for execution. In a simple loading scheme, the assembler outputs the machine language translation of a program on a secondary device and a loader places it in the core. The loader places into memory the machine language version of the user’s program and transfers control to it. Since the loader program is much smaller than the assembler, those make more core available to the user’s program.
+         </P>
+  
+            
+            <p><b>Pages</b></p>
+            <ul>
+                <li>
+                    <a href="index.html" >Introduction of Operating System</a>
+                </li>
+                <li>
+                    <a href="Functions%20of%20Operating%20system.html">Functions of Operating system </a>
+                </li>
+                <li>
+                    <a href="System%20Management.html">I/O System Management</a>
+                </li>
+                <li>
+                    <a href="History%20of%20Operating%20system.html">History of Operating system</a>
+                </li>
+                
+                
+            </ul>
+        
+ </body>
+    
+</html>
